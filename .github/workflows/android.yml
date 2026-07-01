@@ -15,10 +15,6 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-    
-    # هنا نطلب الإصدار 8.7 تحديداً ليتوافق مع مشروعك
-    - name: Setup Gradle Wrapper
-      run: gradle wrapper --gradle-version 8.7
       
     - name: Build with Gradle
-      run: ./gradlew assembleDebug
+      run: gradle clean assembleDebug --stacktrace
