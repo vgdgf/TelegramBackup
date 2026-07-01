@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "اسم_مشروعك"
+rootProject.name = "TelegramBackup"
 include(":app")
